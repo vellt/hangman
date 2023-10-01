@@ -14,10 +14,12 @@ class LetterButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoButton.filled(
-      padding: EdgeInsets.zero,
-      onPressed: (isDisabled) ? null : () => controller.tippEllenorzese(letter),
-      child: Center(
+    return Padding(
+      padding: EdgeInsets.all(5),
+      child: CupertinoButton.filled(
+        padding: EdgeInsets.zero,
+        onPressed:
+            (isDisabled) ? null : () => controller.tippEllenorzese(letter),
         child: Text(
           letter,
         ),

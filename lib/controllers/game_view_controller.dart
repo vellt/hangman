@@ -73,7 +73,7 @@ class GameViewController extends GetxController {
       tippek.add(Tipp(karakter: tipp, talaltE: true));
       if (winEllenorzese()) {
         Get.to(
-          EndView("Gratulálok! Nyertél", rosszTippekDbSzam()),
+          EndView("Gratulálok! Nyertél!🤩🎉🎉", rosszTippekDbSzam()),
           transition: Transition.cupertino,
         );
       }
@@ -81,7 +81,7 @@ class GameViewController extends GetxController {
       tippek.add(Tipp(karakter: tipp, talaltE: false));
       if (gameOverEllenorzese()) {
         Get.to(
-          EndView("Sajnos vesztettél!", rosszTippekDbSzam()),
+          EndView("Sajnos vesztettél!😢", rosszTippekDbSzam()),
           transition: Transition.cupertino,
         );
       }

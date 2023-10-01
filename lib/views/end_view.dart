@@ -16,7 +16,13 @@ class EndView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset("images/$index.jpg"),
-            Text(uzenet),
+            Text(
+              uzenet,
+              style: TextStyle(fontSize: 30),
+            ),
+            SizedBox(
+              height: 20,
+            ),
             CupertinoButton.filled(
               child: Text("Vissza a kezdőlapra"),
               onPressed: () {
